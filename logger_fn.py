@@ -1,5 +1,6 @@
 __author__ = 'Sejune Cheon'
-__version__ ='1.0'
+__version__ = '1.0'
+
 # tested on python 3.5
 
 import logging
