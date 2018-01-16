@@ -1,5 +1,6 @@
 __author__ = 'Sejune Cheon'
 __version__ = '1.0'
+__environment__ = 'Python-3.5.2'
 
 import scipy
 import numpy as np
