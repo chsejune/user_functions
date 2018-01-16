@@ -1,9 +1,9 @@
-# user_functions
+# user_functions v1.0
+
 function development for convenience coding
 
 logger_fn.py: 
 * log를 기록하기 위해 만든 function
-
 
 roc_curve.py
 * roc curve를 그려주는 function
