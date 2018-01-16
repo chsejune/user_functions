@@ -10,3 +10,6 @@ roc_curve.py
 
 sampling.py
 * 데이터를 random sampling 하는 함수
+
+image_read.py
+* 이미지 데이터 불러들이기
