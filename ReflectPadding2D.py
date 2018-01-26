@@ -1,13 +1,15 @@
 __author__ = 'Sejune Cheon'
-__version__ ='1.0'
+__version__ ='1.1'
 __environment__ = 'python-3.5.2, keras-2.1.3, tensorflow-1.4.0'
-__description__ = 'ReflectPadding2D layer for keras'
+__description__ = 'ReflectPadding2D layer for keras' \
+                  'get_custom_objects 함수를 추가하여 저장된 모델 불러오기 할때 가능하도록 수정'
 
 # from keras import backend as K
 from keras.engine.topology import Layer, InputSpec
 from keras.utils import conv_utils
 import tensorflow as tf
 from keras.backend.common import image_data_format
+from keras.utils.generic_utils import get_custom_objects
 
 
 class ReflectPadding2D(Layer):
@@ -147,3 +149,5 @@ class ReflectPadding2D(Layer):
                        [0, 0]]
         return tf.pad(x, pattern, mode='REFLECT')
 
+
+get_custom_objects().update({'ReflectPadding2D': ReflectPadding2D})
